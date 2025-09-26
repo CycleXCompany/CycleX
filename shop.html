@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYCLE X | Shop & Recycle</title>
+    <link rel="shortcut icon" href="./images/cycleX-logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="./css/shop.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark bg-success sticky-top" id="main-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="./images/cycleX-logo.png" class="nav-logo" alt="Recycle logo">
+                CYCLE X
+            </a>
+            <button class="navbar-toggler" id="nav-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#stats">Impact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Buy/Recycle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+                <a class="btn btn-light ms-lg-3 mt-2 mt-lg-0" href="register.html" id="reg">
+                    <i class="fas fa-user-plus me-1"></i>Register
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="service-selection py-4 bg-light-green">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="text-center mb-4 fw-bold">
+                                <i class="fas fa-arrows-alt-h me-2"></i>Select Service Type
+                            </h3>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="service-option text-center p-4 rounded-3 h-100 active-service"
+                                        id="shopOption">
+                                        <div class="icon-circle mx-auto mb-3">
+                                            <i class="fas fa-shopping-cart fa-2x text-white"></i>
+                                        </div>
+                                        <h4 class="fw-bold mb-3">Buy Recycled Products</h4>
+                                        <p class="text-muted">Browse our eco-friendly products made from recycled
+                                            materials</p>
+                                        <button class="btn btn-success mt-2">
+                                            <i class="fas fa-store me-2"></i>View Products
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="service-option text-center p-4 rounded-3 h-100" id="recycleOption">
+                                        <div class="icon-circle mx-auto mb-3">
+                                            <i class="fas fa-recycle fa-2x text-white"></i>
+                                        </div>
+                                        <h4 class="fw-bold mb-3">Recycle Your Materials</h4>
+                                        <p class="text-muted">Help us Keep earth green by recycling your materials.</p>
+                                        <button class="btn btn-outline-success mt-2">
+                                            <i class="fas fa-truck me-2"></i>Request Pickup
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section py-5" id="productsSection">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">
+                    <i class="fas fa-store me-2"></i>Our Eco-Friendly Products
+                </h2>
+                <p class="lead text-muted">High-quality items made from recycled materials</p>
+            </div>
+
+            <div class="row g-4" id="productsContainer">
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="#" class="product-card-link">
+                        <div class="card h-100 product-card">
+                            <div class="product-img-wrapper">
+                                <img src="./images/Cans/cans_recycle.jpeg" class="card-img-top product-img"
+                                    alt="Recycled Can Bottle">
+                                <span class="badge product-badge bg-success">NEW</span>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Recycled Can Bottle</h5>
+                                <div class="product-rating mb-2">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                    <small class="text-muted ms-1">(4.5)</small>
+                                </div>
+                                <p class="product-price">$7.50</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="#" class="product-card-link">
+                        <div class="card h-100 product-card">
+                            <div class="product-img-wrapper">
+                                <img src="./images/Cans/jar_recycle.jpeg" class="card-img-top product-img"
+                                    alt="Light Jar">
+                                <span class="badge product-badge bg-danger">SALE</span>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Light Jar</h5>
+                                <div class="product-rating mb-2">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="far fa-star"></i>
+                                    <small class="text-muted ms-1">(4.0)</small>
+                                </div>
+                                <p class="product-price">$9.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="#" class="product-card-link">
+                        <div class="card h-100 product-card">
+                            <div class="product-img-wrapper">
+                                <img src="./images/Paper/moon_papper_2.jpeg" class="card-img-top product-img"
+                                    alt="Amazing Moon Decor">
+                                <span class="badge product-badge bg-primary">POPULAR</span>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Amazing Moon Decor</h5>
+                                <div class="product-rating mb-2">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <small class="text-muted ms-1">(5.0)</small>
+                                </div>
+                                <p class="product-price">$15.75</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="recycle-section py-5 bg-light" id="recycleSection" style="display: none;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow border-0" style="border-radius: 15px; border-top: 5px solid #28a745;">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="text-center mb-4">
+                            <h2 class="fw-bold text-success mb-2">
+                                <i class="fas fa-recycle me-2"></i>Recycling Request
+                            </h2>
+                            <p class="text-muted">Fill out your details below to schedule a pickup.</p>
+                        </div>
+                        
+                        <form id="recycleForm">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="recycleName" placeholder="Full Name" required>
+                                <label for="recycleName">Full Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control" id="recyclePhone" placeholder="Phone Number" required>
+                                <label for="recyclePhone">Phone Number</label>
+                            </div>
+                            <div class="form-floating mb-4">
+                                <input type="text" class="form-control" id="recycleAddress" placeholder="Pickup Address" required>
+                                <label for="recycleAddress">Pickup Address</label>
+                            </div>
+
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-7">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="materialType" required>
+                                            <option value="" selected disabled>Choose a material...</option>
+                                            <option value="Oil">Oil (Liters)</option>
+                                            <option value="Paper">Paper (kg)</option>
+                                            <option value="Cans">Cans (count)</option>
+                                            <option value="Glass">Glass (kg)</option>
+                                            <option value="Plastic">Plastic (kg)</option>
+                                        </select>
+                                        <label for="materialType">Material Type</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control" id="materialQuantity" placeholder="Quantity" min="1" required>
+                                        <label for="materialQuantity">Quantity</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-floating mb-4">
+                                <textarea name="additional-info" class="form-control" id="additional"></textarea>
+                                <label for="additional">Additional Info</label>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-success btn-lg py-3" style="font-weight: 600;">
+                                    <i class="fas fa-paper-plane me-2"></i>Submit Request
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="text-white pb-4">
+        <div class="stats-wave"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="mb-3">
+                        <img src="./images/cycleX-logo.png" alt=""> Cycle<span>X</span>
+                    </h3>
+                    <p>Leading the way in sustainable waste management and recycling solutions for a greener tomorrow.
+                    </p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white">About</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white">Services</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white">Contact</a></li>
+                        <li class="mb-2"><a href="shop.html" class="text-white">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#services" class="text-white">Glass Recycling</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white">Cans Recycling</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white">Paper Recycling</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white">Oil Reclamation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <ul class="list-unstyled contact">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Green St, Eco City
+                        </li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +20 10 348236</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@cyclex.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-success opacity-25">
+            <div class="row">
+
+                <div class="col-md-8 text-center text-md-end">
+                    <p class="mb-0"> CycleX Designed with <i class="fas fa-heart text-danger"></i> for our planet</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+
+</html>

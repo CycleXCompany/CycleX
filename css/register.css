@@ -1,0 +1,164 @@
+/* --- Root Variables & Global Styles --- */
+:root {
+    --primary-green: #28a745;
+    --dark-green: #A3D04F;
+    --dark-blue: #1a2533;
+    --gray-light: #f8f9fa;
+    --gray-medium: #6c757d;
+    --gray-dark: #343a40;
+    --font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--gray-light);
+    color: var(--gray-dark);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* --- Main Layout --- */
+.main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* --- Left Branding Section --- */
+.branding-section {
+    width: 45%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1599059813005-7282b95c34e6?q=80&w=1887&auto=format&fit=crop') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    text-align: center;
+}
+
+.branding-content .navbar-brand {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.branding-content .nav-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+}
+
+/* --- Right Form Section --- */
+.form-section {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 450px;
+}
+
+/* --- Auth Tabs --- */
+.auth-tabs {
+    display: flex;
+    border-radius: 10px;
+    background-color: #e9ecef;
+    padding: 5px;
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 0.75rem;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    color: var(--gray-medium);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    background-color: #fff;
+    color: var(--primary-green);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Form Styles --- */
+.auth-form {
+    display: none;
+    animation: fadeIn 0.5s ease-out;
+}
+.auth-form.active { display: block; }
+.form-title { font-weight: 700; color: var(--dark-blue); margin-bottom: 1.5rem; text-align: center; }
+
+.form-group-icon { position: relative; }
+.form-icon { position: absolute; top: 50%; left: 18px; transform: translateY(-50%); color: #adb5bd; }
+.form-control {
+    height: 55px;
+    border-radius: 10px;
+    padding-left: 50px;
+    border: 1px solid #ced4da;
+    font-size: 0.95rem;
+}
+.form-control:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15);
+}
+
+.forgot-password { text-decoration: none; color: var(--primary-green); font-size: 0.9rem; font-weight: 500; }
+.form-check-label { font-size: 0.9rem; }
+
+/* --- Buttons --- */
+.btn-submit {
+    background-image: linear-gradient(45deg, var(--primary-green), var(--dark-green));
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    padding: 0.85rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.btn-submit:hover { transform: translateY(-3px); box-shadow: 0 7px 20px rgba(40, 167, 69, 0.3); }
+
+/* --- Social Login --- */
+.social-login { margin-top: 2rem; text-align: center; }
+.social-text { color: var(--gray-medium); margin-bottom: 1rem; position: relative; }
+.social-text::before, .social-text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 35%;
+    height: 1px;
+    background-color: #dee2e6;
+}
+.social-text::before { left: 0; }
+.social-text::after { right: 0; }
+.social-icons { display: flex; justify-content: center; gap: 1rem; }
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #dee2e6;
+    border-radius: 50%;
+    color: var(--gray-dark);
+    transition: all 0.3s ease;
+}
+.social-icon:hover { background-color: var(--primary-green); color: #fff; border-color: var(--primary-green); }
+
+/* --- Animations & Responsive --- */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 992px) {
+    .main-container { flex-direction: column; }
+    .branding-section, .form-section { width: 100%; }
+    .branding-section { min-height: 40vh; }
+    .form-section { padding: 2rem; }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYCLE X | Contact Us</title>
+    <link rel="shortcut icon" href="./images/cycleX-logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark bg-success sticky-top" id="main-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="./images/cycleX-logo.png" class="nav-logo" alt="Recycle logo">
+                CYCLE X
+            </a>
+            <button class="navbar-toggler" id="nav-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#stats">Impact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Buy/Recycle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+                <a class="btn btn-light ms-lg-3 mt-2 mt-lg-0" href="register.html" id="reg">
+                    <i class="fas fa-user-plus me-1"></i>Register
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Page Content -->
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Contact Us</h1>
+            <p class="subtitle">We're here to answer your questions and help with your recycling needs</p>
+            <button class="cta-button" onclick="window.location.href='index.html'">
+                <i class="fas fa-home me-2"></i>Back to Home
+            </button>
+        </div>
+
+        <div class="contact-methods">
+            <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h2>Call Us</h2>
+                <p class="description">Available 9AM-5PM, Sunday to Thursday</p>
+                <p class="contact-info">+20 10 348236</p>
+            </div>
+
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h2>Email Us</h2>
+                <p class="description">We'll respond within 24 hours</p>
+                <p class="contact-info">info@cyclex.com</p>
+            </div>
+
+            <div class="contact-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h2>Visit Us</h2>
+                <p class="description">Our main recycling facility</p>
+                <p class="contact-info">123 Green St, Eco City</p>
+            </div>
+        </div>
+
+        <div class="forms-wrapper">
+            <div class="form-container" id="contactForm">
+                <h2><i class="fas fa-envelope me-2"></i>Send Us a Message</h2>
+                <form id="contactFormElement">
+                    <div class="input-group">
+                        <label for="name"><i class="fas fa-user me-2"></i>Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email"><i class="fas fa-envelope me-2"></i>Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone"><i class="fas fa-phone me-2"></i>Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your number (+20)" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message"><i class="fas fa-comment-dots me-2"></i>Your Message</label>
+                        <textarea id="message" placeholder="How can we help you?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-white pb-4">
+        <div class="stats-wave"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="mb-3">
+                        <img src="./images/cycleX-logo.png" alt=""> Cycle<span>X</span>
+                    </h3>
+                    <p>Leading the way in sustainable waste management and recycling solutions for a greener tomorrow.
+                    </p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white">About</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white">Services</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white">Contact</a></li>
+                        <li class="mb-2"><a href="shop.html" class="text-white">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#services" class="text-white">Glass Recycling</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white">Cans Recycling</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white">Paper Recycling</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white">Oil Reclamation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <ul class="list-unstyled contact">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Green St, Eco City
+                        </li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +20 10 348236</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@cyclex.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-success opacity-25">
+            <div class="row">
+
+                <div class="col-md-8 text-center text-md-end">
+                    <p class="mb-0"> CycleX Designed with <i class="fas fa-heart text-danger"></i> for our planet</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

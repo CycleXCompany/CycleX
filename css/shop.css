@@ -1,0 +1,168 @@
+/* ==========================================================================
+   1. Root Variables & Global Styles
+   ========================================================================== */
+:root {
+    --primary-green: #28a745;
+    --dark-green: #218838;
+    --light-green: #d4edda;
+    --dark-blue: #2c3e50;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+/* ==========================================================================
+   2. Navigation
+   ========================================================================== */
+.navbar {
+    position: relative;
+    background: rgba(0, 0, 0, 0.8) !important;
+    transition: all 0.3s;
+    padding: 10px 0;
+}
+
+/* Nav Link Hover Effect */
+.navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+/* Cart Counter Badge in Nav */
+#cartCounter {
+    font-size: 0.7rem;
+    padding: 0.35em 0.6em;
+}
+
+
+/* ==========================================================================
+   3. Page Components (Shop & Services)
+   ========================================================================== */
+
+/* --- Service Selection Section --- */
+.service-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icon-circle {
+    background-color: #00917C;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   3. Page Components -> Product Section & Cards (IMPROVED)
+   ========================================================================== */
+
+/* --- Section Header --- */
+.section-title {
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+/* --- Base Product Card Style --- */
+.product-card-link {
+    text-decoration: none; /* Removes underline from the link wrapper */
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card {
+    border: none; /* Remove the default border */
+    border-radius: 15px;
+    overflow: hidden; /* Ensures the image corners are rounded */
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    width: 85%;
+}
+
+/* --- Card Image Styling & Hover Effect --- */
+.product-img-wrapper {
+    overflow: hidden; /* This is key for the zoom effect */
+    position: relative;
+}
+
+.product-img {
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.1); /* Zoom in on the image on hover */
+}
+
+/* --- Card Body Content --- */
+.product-card .card-body {
+    padding: 1.5rem;
+}
+
+.product-card .card-title {
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-bottom: 0.5rem;
+}
+
+.product-rating {
+    color: #ffc107; /* Bootstrap's warning/yellow color for stars */
+    font-size: 0.9rem;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+/* --- Custom Badge Styling --- */
+.product-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.4em 0.8em;
+    border-radius: 20px;
+}
+
+/* --- Overall Card Hover Effect --- */
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 767.98px) {
+    .product-img {
+        height: 250px; /* Adjust height for mobile */
+    }
+}
